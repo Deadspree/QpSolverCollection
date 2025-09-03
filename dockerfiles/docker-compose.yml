@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  ros2-dev:
+    build:
+      context: ..
+      dockerfile: dockerfiles/Dockerfile
+    container_name: ros2_dev_container
+    volumes:
+      - ../:/app
+    tty: true
